@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="blocks/_media.scss">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#home" class="logo">
+          <img src="assets/header/Logo.svg" height="19.42px" width="96px" />
+        </a>
+        <svg
+          class="menu-btn"
+          id="mobile-cta"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
+            fill="white"
+          />
+        </svg>
+        <nav class="navbar open-nav">
+          <svg
+            class="close-btn"
+            id="close-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0,0,256,256"
+            width="32px"
+            height="32px"
+            fill-rule="nonzero"
+          >
+            <g
+              fill="#1f1d21"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+            </g>
+            <g
+              fill="#ffffff"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(8,8)">
+                <path
+                  d="M7.21875,5.78125l-1.4375,1.4375l8.78125,8.78125l-8.78125,8.78125l1.4375,1.4375l8.78125,-8.78125l8.78125,8.78125l1.4375,-1.4375l-8.78125,-8.78125l8.78125,-8.78125l-1.4375,-1.4375l-8.78125,8.78125z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <ul>
+            <li><a class="close-btn" href="index.html">Home</a></li>
+            <li><a class="close-btn" href="menu.html">Menu</a></li>
+            <li><a class="close-btn" href="about.html">About Us</a></li>
+            <li><a class="close-btn" href="story.html">Our Story</a></li>
+            <li><a class="close-btn" href="blog.html">Blog</a></li>
+            <li><a class="close-btn" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="#clone" class="clone close-btn">Clone Project &rarr;</a>
+        </nav>
+    </header>
+    <main>
+      <section id="featured-blogs">
+        <div class="topic">
+            <p class="title-large">Featured Blogs</p>
+        </div>
+          <div class="container">
+            <div class="outside-slide">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="bg-box">
+                  <span class="article-title">Trending</span>
+                  <div class="big-word">
+                    <p class="title-large">A guide to Thai Curry</p>
+                  </div>
+                  <div class="author">
+                    <!-- Slide 1 author content goes here -->
+                    <img src="assets/blog/blog-author.png">
+                    <div class="author-info">
+                      <p class="name">Andrew Johnson</p>
+                      <p class="date">27th January 2023</p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a href="read-more.html"> Read more &rarr; </a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="bg-box">
+                  <span class="article-title">Cooking</span>
+                  <div class="big-word">
+                    <p class="title-large">Breaking News about Cooking!</p>
+                  </div>
+                  <div class="author">
+                    <!-- Slide 2 author content goes here -->
+                    <img src="assets/blog/ben.jpg"
+                    width="60px"
+                    height="60px"
+                    style="border-radius: 50%;">
+                    <div class="author-info">
+                      <p class="name">Andrew Johnson</p>
+                      <p class="date">27th January 2023</p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a href="read-more.html"> Read more &rarr; </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+              <!-- Add more slides as needed -->
+            </div>
+          </div>
+          
+            <div class="sm-box">
+              <div class="item">
+                <div class="sm-img">
+                  <img src="assets/blog/sm-img-1.png" />
+                </div>
+                <div class="sm-text">
+                  <p class="text-topic">
+                    You can move the text by dragging and dropping the text
+                  </p>
+                  <p class="text-base">
+                    Writing UX copies can be a little frustrating and confusing,
+                    and sometimes
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="sm-img">
+                  <img src="assets/blog/sm-img-2.png" />
+                </div>
+                <div class="sm-text">
+                  <p class="text-topic">
+                    Edit this text to make it your own. To edit, simply
+                  </p>
+                  <p class="text-base">
+                    Writing UX copies can be a little frustrating and confusing,
+                    and sometimes
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="sm-img">
+                  <img src="assets/blog/sm-img-3.png" />
+                </div>
+                <div class="sm-text">
+                  <p class="text-topic">
+                    You can move the text by dragging and dropping the text
+                  </p>
+                  <p class="text-base">
+                    Writing UX copies can be a little frustrating and confusing,
+                    and sometimes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="left-side">
+            <div class="item">
+              <p class="bold">Working Hour</p>
+              <p>Sunday to Saturday</p>
+              <p>09:00 AM to 11:00 PM</p>
+            </div>
+            <div class="item">
+              <p class="bold">Location</p>
+              <p>Street - 127, New York,</p>
+              <p>United States</p>
+              <p>546544</p>
+            </div>
+            <div class="item">
+              <p class="bold">Contact us</p>
+              <p>+12345678</p>
+              <p>hey@yourdomain.com</p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5874.812760075806!2d76.9065479321391!3d43.23179169596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0KXQsNC70YvSm9Cw0YDQsNC70YvSmyDQsNKb0L_QsNGA0LDRgtGC0YvSmyDRgtC10YXQvdC-0LvQvtCz0LjRj9C70LDRgCDRg9C90LjQstC10YDRgdC40YLQtdGC0ZY!5e1!3m2!1sen!2skz!4v1689067900364!5m2!1sen!2skz"
+              width="850"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/navbar/logo.png" />
+        </div>
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About US</a></li>
+              <li><a href="story.html">Our Story</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <section id="bottom">
+      <div class="container">
+        <div class="bottom">
+          <div class="site-rights">
+            &copy; 2023 Finsweet | All Rights Reserved
+          </div>
+          <div class="social-media">
+            <a href="#">
+              <img src="assets/footer/facebook.png" />
+            </a>
+            <a href="#">
+              <img src="assets/footer/twitter.png" />
+            </a>
+            <a href="#">
+              <img src="assets/footer/instagram.png" />
+            </a>
+            <a href="#">
+              <img src="assets/footer/linkedin.png" />
+            </a>
+          </div>
+          <div class="contact-us">Contact Us <span>&rarr;</span></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+
+      /*****************MENU BUTTTON****************************/
+
+      const menu = document.querySelector(".menu-btn");
+      const close = document.querySelector(".close-btn");
+      const nav = document.querySelector("nav");
+
+      menu.addEventListener("click", () => {
+        nav.classList.add("open-nav");
+      });
+
+      close.addEventListener("click", () => {
+        nav.classList.remove("open-nav");
+      });
+
+      /*************************SWIPER JS****************************/
+      
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper
+    var swiper = new Swiper(".swiper-container", {
+      loop: true,
+      autoplay: {
+        delay: 2000, // Set the autoplay delay in milliseconds (3 seconds in this example)
+      },
+    });
+  });
+</script>
+  </body>
+</html>
