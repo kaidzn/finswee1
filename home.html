@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <section id="home">
+      <div class="container">
+        <div class="left">
+          <h1 class="title-big">We serve high quality foods of all kinds.</h1>
+          <p class="text-base">
+            Edit this text to make it your own. To edit, simply click directly
+            on the text to start adding your own words. You can move the text.
+          </p>
+          <a href="menu.html" class="orange-btn">View Menu &rarr;</a>
+          <ul class="info">
+            <li>
+              <h2 class="info header-info">Opening Times</h2>
+              <p class="info-text">Sunday to Saturday | 09:00 AM to 11:00 PM</p>
+            </li>
+            <li>
+              <h2 class="info header-info">Location</h2>
+              <p class="info-text">Master canteen, BBSR , Odisha 752054</p>
+            </li>
+            <li>
+              <h2 class="info header-info">Call us</h2>
+              <p class="info-text">+9776462441</p>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="outside-slide">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img src="assets/home/right-image1.png">
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+               <img src="assets/home/right-image2.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/home/right-image3.jpg">
+               </div>
+               <div class="swiper-slide">
+                <img src="assets/home/right-image4.jpg">
+               </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // JavaScript
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        Image:{
+          height: 'auto',
+        }
+      });
+    </script>
+  </body>
+</html>
