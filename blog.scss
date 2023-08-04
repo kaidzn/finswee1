@@ -1,0 +1,255 @@
+#featured-blogs {
+  padding-top: 100px;
+  .container {
+    display: flex;
+    gap: 20px;
+    .topic {
+      margin-left: 500px;
+    }
+    .box {
+      display: flex;
+      padding-top: 50px;
+      gap: 32px;
+      .sm-box {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+      }
+      .item {
+        display: flex;
+        width: 80%;
+        gap: 20px;
+        align-items: center;
+        .sm-img {
+          height: 144px;
+          width: 132px;
+          flex: 0 0 auto;
+          overflow: hidden;
+        }
+        .sm-text {
+          .text-topic {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          .text-base {
+            font-size: 16px;
+            line-height: normal;
+          }
+        }
+      }
+      .bg-box {
+        height: 450px;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(30, 30, 30, 0.9),
+            rgba(30, 30, 30, 0.9)
+          ),
+          url("../assets/blog/big-image.png");
+        background-size: cover;
+        overflow: hidden;
+        .article-title {
+          padding: 16px 32px;
+          text-transform: uppercase;
+          font-family: "Poppins";
+          position: relative;
+          background: rgba(255, 196, 146, 0.47);
+          cursor: pointer;
+          top: 15.8px;
+        }
+        .big-word {
+          padding: 180px 80px 50px 40px;
+          width: 70%;
+        }
+        .author {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-between;
+          width: 90%;
+          .author-des {
+            display: flex;
+            .author-text {
+              .author-name {
+                font-size: 16px;
+              }
+              .date {
+                font-size: 13px;
+                color: #b8b8b8;
+              }
+            }
+            img {
+              width: 40px;
+              height: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .read-more {
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+            color: #eaab74;
+          }
+        }
+      }
+    }
+  }
+}
+/* Swiper CSS */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+/* .bg-box CSS (Slide container) */
+.bg-box {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(45, 45, 45, 0.263),
+      rgba(29, 29, 29, 0.323)
+    ),
+    url("../assets/blog/big-image.png");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.slide-container .article-title {
+  padding: 16px 32px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  position: relative;
+  background: rgba(255, 196, 146, 0.47);
+  cursor: pointer;
+  top: 0;
+}
+
+.slide-container .big-word {
+  padding-top: 180px;
+  width: 100%;
+}
+
+.slide-container .big-word .title-large {
+  font-size: 30px;
+  color: white;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slide-container .author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.article-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background: #eaab74;
+  margin-left: -600px;
+}
+
+.slide-container .author img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.slide-container .author .author-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-container .author .author-text .author-name {
+  font-size: 16px;
+  color: white;
+}
+
+.slide-container .author .author-text .date {
+  font-size: 13px;
+  color: #b8b8b8;
+}
+.outside-slide {
+  width: 700px;
+  overflow: hidden;
+}
+
+.slide-container .read-more a {
+  color: white;
+  text-decoration: none;
+}
+
+.slide-container .read-more a:hover {
+  text-decoration: underline;
+  color: #eaab74;
+}
+
+/* Styling for Small Slides in .sm-box */
+.slide-container .sm-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.slide-container .sm-box .item {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  align-items: center;
+}
+
+.slide-container .sm-box .item .sm-img {
+  height: 144px;
+  width: 132px;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.slide-container .sm-box .item .sm-img img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-container .sm-box .item .sm-text .text-topic {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.slide-container .sm-box .item .sm-text .text-base {
+  font-size: 16px;
+  line-height: normal;
+  color: white;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.read-more {
+  display: flex;
+  justify-content: end;
+}
+
+@import "./blocks/media";
