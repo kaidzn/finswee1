@@ -1,11 +1,13 @@
 #featured-blogs {
   padding-top: 100px;
+  .topic p {
+    display: flex;
+    justify-content: center;
+  }
   .container {
     display: flex;
     gap: 20px;
-    .topic {
-      margin-left: 500px;
-    }
+
     .box {
       display: flex;
       padding-top: 50px;
@@ -42,8 +44,8 @@
         height: 450px;
         width: 100%;
         background-image: linear-gradient(
-            rgba(30, 30, 30, 0.9),
-            rgba(30, 30, 30, 0.9)
+            rgba(6, 6, 6, 0.522),
+            rgba(11, 10, 10, 0.378)
           ),
           url("../assets/blog/big-image.png");
         background-size: cover;
@@ -114,8 +116,8 @@
   height: 100%;
   width: 100%;
   background-image: linear-gradient(
-      rgba(45, 45, 45, 0.263),
-      rgba(29, 29, 29, 0.323)
+      rgba(19, 19, 19, 0.564),
+      rgba(16, 16, 16, 0.59)
     ),
     url("../assets/blog/big-image.png");
   background-size: cover;
@@ -189,18 +191,8 @@
   color: #b8b8b8;
 }
 .outside-slide {
-  width: 700px;
+  max-width: 700px;
   overflow: hidden;
-}
-
-.slide-container .read-more a {
-  color: white;
-  text-decoration: none;
-}
-
-.slide-container .read-more a:hover {
-  text-decoration: underline;
-  color: #eaab74;
 }
 
 /* Styling for Small Slides in .sm-box */
@@ -244,12 +236,22 @@
 }
 .author {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
-.read-more {
+.author-info {
+  display: flex;
+  gap: 10px;
+}
+.read-more a {
   display: flex;
   justify-content: end;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #eaab74;
+  }
 }
 
 @import "./blocks/media";
